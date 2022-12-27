@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtDisplayNumber"
+        android:layout_width="400px"
+        android:layout_height="150px"
+        android:hint="currency"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"/>
+
+    <RadioGroup
+
+        android:id="@+id/radioCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDisplayNumber"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioUSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:text="USA"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioEurope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:text="EUR"
+            app:layout_constraintLeft_toRightOf="@+id/radioUSA"
+            app:layout_constraintTop_toBottomOf="@id/txtDisplayNumber" />
+        <RadioButton
+            android:id="@+id/radioAustralia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:text="AUS"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <RadioButton
+            android:id="@+id/radioJapan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:text="JAP"
+            app:layout_constraintRight_toLeftOf="@id/radioAustralia" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnFinish"
+        android:text="Finish"
+        android:textAlignment="center"
+        android:textSize="40px"
+        android:layout_width="400px"
+        android:layout_height="150px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioCountry"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

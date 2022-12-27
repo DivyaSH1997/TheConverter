@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListView
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+
+        android:id="@+id/txtUsername"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/txtNumber"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/txtUsername"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/btnDate"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"
+        android:textAlignment="center"
+        android:text="Date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtUsername"/>
+
+
+    <Button
+
+        android:id="@+id/btnTime"
+        android:text="Time"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/btnDate"
+        app:layout_constraintTop_toBottomOf="@id/txtNumber"/>
+
+    <TextView
+
+        android:id="@+id/txtDate"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDate"/>
+
+    <TextView
+
+        android:id="@+id/txtTime"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/txtDate"
+        app:layout_constraintTop_toBottomOf="@id/btnTime" />
+
+    <TextView
+
+        android:id="@+id/txtAmountTitle"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Amount in Rs:"
+        android:textSize="40px"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDate"/>
+    <EditText
+
+        android:id="@+id/edtAmountEnter"
+       android:hint="Enter Number"
+        android:layout_width="450px"
+        android:layout_height="150px"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:textSize="40px"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/txtDate"
+        app:layout_constraintTop_toBottomOf="@id/txtTime" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="600px"
+        android:layout_height="150px"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:text="Convert"
+        android:textSize="40px"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAmountTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
